@@ -78,7 +78,7 @@ if __name__ == '__main__':
     path = os.path.dirname(os.path.abspath(__file__))
     creatingFolders(path+'/data/statistics/')
 
-    parser = argparse.ArgumentParser(description="Packet Capture App!")
+    parser = argparse.ArgumentParser(description="D-ITG parser!")
     parser.add_argument("-i", "--inputFile", help="ITG receiver file as input. Ex.: fileName.log", type=str, required=True)
     parser.add_argument("-o", "--outputFile", help="The file name that you wish to write data into. Ex.: fileName.csv", type=str, required=True)
     parser.add_argument("-t", "--time", help="SMA. Averaged time in seconds", type=str, default='1')
